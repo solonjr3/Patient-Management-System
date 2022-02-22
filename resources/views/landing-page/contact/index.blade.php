@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper bg-light">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -25,7 +25,7 @@
     <section class="content">
 
       <!-- Default box -->
-      <div class="card">
+      <div class="card bg-dark">
         <div class="card-body row">
           <div class="col-5 text-center d-flex align-items-center justify-content-center">
             <div class="">
