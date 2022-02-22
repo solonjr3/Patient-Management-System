@@ -119,9 +119,8 @@
                 <br>
                 <br>
                 {{-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> --}}
-                <a href="add-patient" class="btn btn-primary">Add Patient General Information</a>
-                <a href="contact-tracing-form" class="btn btn-secondary">Contact Tracing Form</a>
-                <a href="patients" class="btn btn-warning">View Patient List</a>
+                <a href="add-patient" class="btn btn-primary">Patient General Information and Contact Tracing form</a>
+                <a href="patients" class="btn btn-secondary">View Patient List</a>
               </div>
             </div>
 
