@@ -33,6 +33,13 @@
               <p class="lead mb-5">Ateneo de Naga University P. Santos St., Naga Camarines Sur<br>
                 Phone: 054 472 2368 ext 2422 
               </p>
+              <p class="lead mb-5">Alec Anthony Arejola<br>
+                Phone: 054 472 2368 ext 2422 
+              </p>
+              <p class="lead mb-5">Solon Ayala Jr.<br>
+                Phone: +63 929 0420 536
+              </p>
+                            
             </div>
           </div>
           <div class="col-7">

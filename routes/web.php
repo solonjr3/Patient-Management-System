@@ -88,6 +88,9 @@ Route::get('/home', 'HomeController@index')->name('home');
     /* index page */
         Route::get('/food', 'FoodController@index')->name('food');
 
+    /* form */
+        Route::get('/food-form', 'FoodController@form')->name('food-form');
+
 
 /*****************************************************************
  
@@ -102,7 +105,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
     /* index page */
         Route::get('/medicine', 'MedicineController@index')->name('medicine');
-
+    /* form */
+        Route::get('/medicine-form', 'MedicineController@form')->name('medicine-form');
 
 /************************************************************************* 
 
@@ -148,3 +152,18 @@ Route::get('/home', 'HomeController@index')->name('home');
 
     /*index page*/
         // Route::get('/loggingin', 'Auth\LoginController@index' )->name('loginindex'); 
+
+
+/**************************************************
+ 
+░██████╗░██████╗░  ░█████╗░░█████╗░██████╗░███████╗
+██╔═══██╗██╔══██╗  ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+██║██╗██║██████╔╝  ██║░░╚═╝██║░░██║██║░░██║█████╗░░
+╚██████╔╝██╔══██╗  ██║░░██╗██║░░██║██║░░██║██╔══╝░░
+░╚═██╔═╝░██║░░██║  ╚█████╔╝╚█████╔╝██████╔╝███████╗
+░░░╚═╝░░░╚═╝░░╚═╝  ░╚════╝░░╚════╝░╚═════╝░╚══════╝ 
+
+***************************************************/
+
+    /* index page*/
+        Route::get('/qr-scan', 'QrController@index')->name('qr-page');
