@@ -10,4 +10,9 @@ class FoodController extends Controller
     {
         return view('landing-page.food.index');
     }
+
+    public function form()
+    {
+        return view('landing-page.food.form');
+    }
 }

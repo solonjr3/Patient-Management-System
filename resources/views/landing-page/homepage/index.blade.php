@@ -133,7 +133,7 @@
                 <br>
                 <br>
                 {{-- <p class="card-text">Please choose one of the options below</p> --}}
-                <a href="#" class="btn btn-primary">Add New Record</a>
+                <a href="/food-form" class="btn btn-primary">Add New Record</a>
                 <a href="/food" class="btn btn-secondary">View Records</a>
                 {{-- <a href="#" class="btn btn-danger">View Records</a> --}}
               </div>
@@ -150,12 +150,13 @@
                 <br>
                 <br>
                 {{-- <p class="card-text">Please choose one of the options below</p> --}}
-                <a href="#" class="btn btn-primary">Add New Record</a>
+                <a href="/medicine-form" class="btn btn-primary">Add New Record</a>
                 <a href="/medicine" class="btn btn-secondary">View Records</a>
                 {{-- <a href="#" class="btn btn-danger">View Records</a> --}}
               </div>
             </div>
 
+            
             {{-- <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Food Distribed</h4>

@@ -12,4 +12,8 @@ class MedicineController extends Controller
         return view('landing-page.medicine.index');
     }
 
+    public function form()
+    {
+        return view('landing-page.medicine.form');
+    }
 }
