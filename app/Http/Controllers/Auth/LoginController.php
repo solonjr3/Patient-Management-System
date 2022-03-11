@@ -36,7 +36,7 @@ class LoginController extends Controller
     
     public function index()
     {
-        return view('auth.login2');
+        return view('landing-page.welcome.index');
     }
 
     

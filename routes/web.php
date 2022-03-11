@@ -137,6 +137,26 @@ Route::get('/home', 'HomeController@index')->name('home');
     /* index page */
         Route::get('/contact-us', 'ContactController@index')->name('contact-us');
 
+    
+    /****** BACK END ******/
+
+    /****** TABLE INDEX ******/
+
+        Route::get('/contacts','ContactController@tableIndex')->name('contacts.index');
+
+    /****** CREATE ******/
+
+        Route::post('contact','ContactController@store');
+
+
+    /****** DELETE ******/
+
+        Route::post('/contacts/delete/{id}', 'ContactController@destroy')->name('contacts.destroy');
+
+    /****** SHOW ******/
+
+        Route::get('/contacts/show/{id}', 'ContactController@show')->name('contacts.show');
+
 
 /***********************************
  
@@ -167,3 +187,18 @@ Route::get('/home', 'HomeController@index')->name('home');
 
     /* index page*/
         Route::get('/qr-scan', 'QrController@index')->name('qr-page');
+
+
+/******************************************************************
+ 
+░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗
+░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝
+░╚██╗████╗██╔╝█████╗░░██║░░░░░██║░░╚═╝██║░░██║██╔████╔██║█████╗░░
+░░████╔═████║░██╔══╝░░██║░░░░░██║░░██╗██║░░██║██║╚██╔╝██║██╔══╝░░
+░░╚██╔╝░╚██╔╝░███████╗███████╗╚█████╔╝╚█████╔╝██║░╚═╝░██║███████╗
+░░░╚═╝░░░╚═╝░░╚══════╝╚══════╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚══════╝ 
+ 
+********************************************************************/
+
+    /* index page*/
+        Route::get('/log-in', 'Auth\LoginController@index')->name('log-in');
