@@ -22,7 +22,7 @@
               <!-- form start -->
               <form method="POST" action="{{ url('medicine') }}" enctype="multipart/form-data">
 
-                @csrf 
+            @csrf 
             <div class="content">
                 <div class="container-fluid">
                 <div class="form-group">
@@ -38,27 +38,14 @@
                 <!-- Date -->
                 <div class="form-group">
                   <label>Date:</label>
-                    <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
-                        <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                    <div class="input-group date" id="medicine_date" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#medicine_date" name="medicine_date" id="medicine_date"/>
+                        <div class="input-group-append" data-target="#medicine_date" data-toggle="datetimepicker">
                             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                         </div>
                     </div>
                 </div>
-                <!-- time Picker -->
-                <div class="bootstrap-timepicker">
-                  <div class="form-group">
-                    <label>Time picker:</label>
-
-                    <div class="input-group date" id="timepicker" data-target-input="nearest">
-                      <input type="text" class="form-control datetimepicker-input" data-target="#timepicker"/>
-                      <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
-                          <div class="input-group-text"><i class="far fa-clock"></i></div>
-                      </div>
-                    </div>
-                    <!-- /.input group -->
-                </div>
-                
+               
             </div>     
           </div>
 
@@ -85,18 +72,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 <script>
   $(function () {  
+    
     //Date picker
-    $('#reservationdate').datetimepicker({
+    $('#medicine_date').datetimepicker({
         format: 'L'
     });
 
-    //Date and time picker
-    $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
-
-    //Timepicker
-    $('#timepicker').datetimepicker({
-      format: 'LT'
-    })
   })
 </script>
 

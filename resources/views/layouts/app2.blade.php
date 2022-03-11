@@ -32,6 +32,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
+
+
 </head>
 <body class="hold-transition layout-top-nav">
 
@@ -81,7 +83,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
               <li><a href="#" class="dropdown-item">Logout </a></li>
-              <li><a href="#" class="dropdown-item">Some other action</a></li>
+              <li><a href="#" class="dropdown-item">Account Settings</a></li>
 
               <li class="dropdown-divider"></li>
 {{-- 
@@ -157,6 +159,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="../../plugins/chart.js/Chart.min.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="{{ asset("js/script.js") }}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 </body>
 </html>
