@@ -1,26 +1,24 @@
-<div class="modal fade" id="ModalShow{{ $contact->id }}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="ModalShow{{ $medicine->id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title"> {{ __('Contact Details') }} </h4>
+                    <h4 class="modal-title"> {{ __('Medicine Details') }} </h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"> &times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h3><b> {{ $contact->name }} </b></h3>
+
+                    Medicine Name:
+                    <h3><b> {{ $medicine->medicine_name }} </b></h3>
                     </br>
                     
-                    Email:
-                    <h5><b> {{ $contact->email }} </b></h5>
+                    Medicine Quantity:
+                    <h5><b> {{ $medicine->medicine_quantity }} </b></h5>
  
                     
-                    Subject:
-                    <h5><b> {{ $contact->subject }} </b></h5>
-
-                    <br>
-                    Message: </br></br>
-                    <h5><b> {{ $contact->message }} </b></h5>
+                    Medicine Arrived On:
+                    <h5><b> {{ $medicine->created_at->todatestring() }}  </b></h5>
                     
 
                 </div>

@@ -90,7 +90,7 @@
             </div>
             <div class="form-group">
               <input type="submit" class="btn btn-primary" value="Send message">
-              <input type="button" class="btn btn-secondary" value="Back" onclick="history.back()">
+              <button type="button" class="btn btn-block btn-outline-secondary btn-lg" onclick="parent.location='hompage'">Back</button>
             </div>
           </form>
           </div>
