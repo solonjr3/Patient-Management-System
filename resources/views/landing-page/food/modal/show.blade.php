@@ -1,28 +1,20 @@
-<div class="modal fade" id="ModalShow{{ $contact->id }}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="ModalShow{{ $food->id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title"> {{ __('Contact Details') }} </h4>
+                    <h4 class="modal-title"> {{ __('Food Details') }} </h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"> &times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h3><b> {{ $contact->name }} </b></h3>
+                    Food Category
+                    <h3><b> {{ $food->food_category }} </b></h3>
                     </br>
                     
-                    Email:
-                    <h5><b> {{ $contact->email }} </b></h5>
- 
+                    No. of food arrived :
+                    <h5><b> {{ $food->food_allocated }} </b></h5>
                     
-                    Subject:
-                    <h5><b> {{ $contact->subject }} </b></h5>
-
-                    <br>
-                    Message: </br></br>
-                    <h5><b> {{ $contact->message }} </b></h5>
-                    
-
                 </div>
                 
                 <div class="modal-footer">
@@ -37,11 +29,11 @@
 @push('script')     
 <script>
   $(document).ready( function() {
-    $('#ContactTable').DataTable({
+    $('#FoodTable').DataTable({
       
       processing:  true;
       serverSide: true;
-      ajax: '{!! route('contacts.index') !!}',
+      ajax: '{!! route('food') !!}',
       columns: [
 
         { data: 'id', name: 'id'},

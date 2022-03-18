@@ -85,11 +85,31 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 ******************************************************************/
 
-    /* index page */
-        Route::get('/food', 'FoodController@index')->name('food');
+    // /* index page */
+    //     Route::get('/food', 'FoodController@index')->name('food');
 
     /* form */
         Route::get('/food-form', 'FoodController@form')->name('food-form');
+    
+        /****** BACK END ******/
+
+            /****** TABLE INDEX ******/
+
+                Route::get('/food','FoodController@tableIndex')->name('food');
+
+            /****** CREATE ******/
+
+                Route::post('food','FoodController@store');
+
+
+            /****** DELETE ******/
+
+                Route::post('/foods/delete/{id}', 'FoodController@destroy')->name('foods.destroy');
+
+            /****** SHOW ******/
+
+                Route::get('/foods/show/{id}', 'FoodController@show')->name('foods.show');
+
 
 
 /*****************************************************************
@@ -103,10 +123,30 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 ******************************************************************/
 
-    /* index page */
-        Route::get('/medicine', 'MedicineController@index')->name('medicine');
+    // /* index page */
+    //     Route::get('/medicine', 'MedicineController@index')->name('medicine');
+    
     /* form */
         Route::get('/medicine-form', 'MedicineController@form')->name('medicine-form');
+
+    /****** BACK END ******/
+
+            /****** TABLE INDEX ******/
+
+                Route::get('/medicine','MedicineController@tableIndex')->name('medicine');
+
+            /****** CREATE ******/
+
+                Route::post('medicine','MedicineController@store');
+
+
+            /****** DELETE ******/
+
+                Route::post('/medicines/delete/{id}', 'MedicineController@destroy')->name('medicines.destroy');
+
+            /****** SHOW ******/
+
+                Route::get('/medicines/show/{id}', 'MedicineController@show')->name('medicines.show');
 
 /************************************************************************* 
 
